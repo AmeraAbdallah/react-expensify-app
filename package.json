@@ -2,15 +2,18 @@
   "name": "expensify",
   "version": "1.0.0",
   "main": "index.js",
+  "author": {
+    "name": "Amera"
+  },
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
     "build:dev": "webpack",
-    "build:prod": "webpack -p",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "babel-counter": "babel src/playground/counter-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "test":"jest"
+    "test": "jest"
   },
   "dependencies": {
     "babel": "^6.23.0",
@@ -23,6 +26,7 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
     "global": "^4.3.2",
+    "jest": "^23.6.0",
     "live-server": "^1.2.0",
     "moment": "2.18.1",
     "node-sass": "4.5.3",
@@ -34,6 +38,7 @@
     "react-modal": "2.2.2",
     "react-redux": "5.0.5",
     "react-router-dom": "4.2.2",
+    "react-test-renderer": "16.0.0",
     "redux": "3.7.2",
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
