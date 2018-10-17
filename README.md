@@ -3,11 +3,12 @@
 
 1- install dependecies .
 
-2- run command `npm run dev-server`, to see live changes.
+2- run command `yarn run dev-server`, to see live changes.
 
-4- Or run build commands : `npm run build:dev` for development, `npm run build:prod` for production . then run command `npm run serve` to see changes .
+4- Or run build commands : `yarn run build:dev` for development, `yarn run build:prod` for production . 
 
-http://localhost:8080/
+then  use `yarn run start` to run the node server on port 3000.
+
 
 link to see live app 
 
