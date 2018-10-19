@@ -6,9 +6,9 @@ const ExpenseList = (props) => {
     return (
         <div>
             <h2>Expense List</h2>
-            {props.expenses.map((expense)=>{
+            {(props.expenses.length > 0) ? props.expenses.map((expense)=>{
                 return <ExpenseListItem key={expense.id} {...expense} />
-            })}
+            }) : <p>no expenses</p>}
             
         </div>
     );

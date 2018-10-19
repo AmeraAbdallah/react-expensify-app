@@ -4,11 +4,14 @@ import expenseTotal from '../selectors/expenseTotal';
 import getVisibleExpenses from '../selectors/visibleExpenses';
 import numeral from 'numeral';
 
-const ExpeneseSummery = (props) => (
-    <div>
-        viewing {props.expenses.length} expenses totalling {numeral(expenseTotal(props.expenses)/100).format('$0,0.00')}
-    </div>
-);
+const ExpeneseSummery = ({expenses}) => {
+    const expenseWord = (expenses.length === 1)? 'expense' : 'expenses';
+
+    return (
+        <div>
+            <h3>viewing {expenses.length} {expenseWord} totalling {numeral(expenseTotal(expenses)/100).format('$0,0.00')}</h3>
+        </div>)
+    };
 
 const mapStateToProps = (state) => {
     return {
