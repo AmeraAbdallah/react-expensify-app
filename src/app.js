@@ -11,6 +11,8 @@ import 'normalize.css/normalize.css'; //make style look similar in all browsers
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
+import './firebase/firebase';
+
 const store = configureStore();
 
 ReactDOM.render(
